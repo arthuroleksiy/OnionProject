@@ -1,0 +1,13 @@
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\obj\Debug\netcoreapp3.1\Onion_PersistanceLayer.csprojAssemblyReference.cache
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\obj\Debug\netcoreapp3.1\Onion_PersistanceLayer.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\obj\Debug\netcoreapp3.1\Onion_PersistanceLayer.AssemblyInfo.cs
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\bin\Debug\netcoreapp3.1\Onion_PersistanceLayer.deps.json
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\bin\Debug\netcoreapp3.1\Onion_PersistanceLayer.dll
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\bin\Debug\netcoreapp3.1\Onion_PersistanceLayer.pdb
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\bin\Debug\netcoreapp3.1\Onion_DomainLayer.dll
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\bin\Debug\netcoreapp3.1\Onion_DomainLayer.pdb
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\obj\Debug\netcoreapp3.1\Onion_PersistanceLayer.csproj.CopyComplete
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\obj\Debug\netcoreapp3.1\Onion_PersistanceLayer.dll
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\obj\Debug\netcoreapp3.1\Onion_PersistanceLayer.pdb
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\bin\Debug\netcoreapp3.1\Onion_PersistanceLayer.xml
+C:\Users\Hp\source\repos\Onion_PersistanceLayer\bin\Debug\netcoreapp3.1\Onion_DomainLayer.xml

@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Onion_ServiceLayer</name>
+    </assembly>
+    <members>
+        <member name="T:Onion_ServiceLayer.AddItemService">
+            <summary>
+            Add item class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.AddItemService.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.AddItemService.AddItem(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Add new Item to assortement
+            </summary>
+            <param name="name"></param>
+            <param name="amount"></param>
+            <param name="description"></param>
+            <param name="price"></param>
+            <param name="category"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.AddItemService.ParseChoise(System.String,System.Int32@)">
+            <summary>
+            Check if choise is correct
+            </summary>
+            <param name="choise"></param>
+            <param name="result"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.AddItemService.IsIntResult(System.String,System.Int32@)">
+            <summary>
+            Check if input type is int
+            </summary>
+            <param name="value"></param>
+            <param name="intResult"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.AddItemService.IsDoubleResult(System.String,System.Double@)">
+            <summary>
+            Check if input type is double
+            </summary>
+            <param name="value"></param>
+            <param name="doubleResult"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.AddItemService.IsCategoryType(System.String,Onion_DomainLayer.Category@)">
+            <summary>
+            Check if input type is <see cref="T:Onion_DomainLayer.Category"/>
+            </summary>
+            <param name="input"></param>
+            <param name="outValue"><see cref="T:Onion_DomainLayer.Category"/> type</param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.AddItemService.IsPriceCorrect(System.String,System.Decimal@)">
+            <summary>
+            Check if price is correct
+            </summary>
+            <param name="input"></param>
+            <param name="result"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="T:Onion_ServiceLayer.AssortementService">
+            <summary>
+            Assortement class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.AssortementService.GetAssortement">
+            <summary>
+             Method that returns supermarket assortment
+            </summary>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.IItem"/></returns>
+        </member>
+        <member name="T:Onion_ServiceLayer.BucketOrderService">
+            <summary>
+            Bucket order class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.ChangeStatus(System.Int32,Onion_DomainLayer.Status)">
+            <summary>
+            Change status of bucket order
+            </summary>
+            <param name="id"></param>
+            <param name="status"><see cref="T:Onion_DomainLayer.Status"/> type</param>
+            <exception cref="T:System.IndexOutOfRangeException">return where id is out of range</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.GetOrders">
+            <summary>
+            Method gets collection of orders
+            </summary>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.Order"/></returns>
+            <exception cref="T:System.NullReferenceException">Returns if result is empty</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.GetFirstId">
+            <summary>
+            Method gets first id
+            </summary>
+            <returns>int value of the first id</returns>
+            <exception cref="T:System.IndexOutOfRangeException">Returns if index not in acceptable range</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.GetStatusBefore(System.Int32)">
+            <summary>
+            Method get <see cref="T:Onion_DomainLayer.Status"/> before changes
+            </summary>
+            <param name="intId"></param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.GetLastId">
+            <summary>
+            Get last id from bucket orders
+            </summary>
+            <returns>int value of id</returns>
+            <exception cref="T:System.NullReferenceException">Returns if id not in range</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.getAllOrders">
+            <summary>
+            Method returns all Orders
+            </summary>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.Order"/></returns>
+            <exception cref="T:System.NullReferenceException">Resturns if collection is empty</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.IsUserRole">
+            <summary>
+            Get user role
+            </summary>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.BucketOrderService.IsCurrentUserLogined(Onion_DomainLayer.Order)">
+            <summary>
+            Check if current user is signed id
+            </summary>
+            <param name="order"><see cref="!:Order>"/></param>
+            <returns>bool value</returns>
+            <exception cref="T:System.NullReferenceException">Throw if any of orders do not belong to user</exception>
+        </member>
+        <member name="T:Onion_ServiceLayer.ChangeInfoService">
+            <summary>
+            Change info class with business logic
+            </summary>
+        </member>
+        <member name="F:Onion_ServiceLayer.ChangeInfoService.registeredUsers">
+            <summary>
+            Collection of <see cref="T:Onion_DomainLayer.RegisteredUser"/>
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeInfoService.GetUsers">
+            <summary>
+            Gets collection of <see cref="T:Onion_DomainLayer.RegisteredUser"/>
+            </summary>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.RegisteredUser"/></returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeInfoService.ChangeName(System.Int32,System.String)">
+            <summary>
+            Changes name of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeInfoService.ChangeSurame(System.Int32,System.String)">
+            <summary>
+            Changes surname of user 
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeInfoService.ChangeTelephone(System.Int32,System.String)">
+            <summary>
+            Changes telephone of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeInfoService.ChangeLogin(System.Int32,System.String)">
+            <summary>
+            Changes login of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeInfoService.ChangePassword(System.Int32,System.String)">
+            <summary>
+            Changes password of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:Onion_ServiceLayer.ChangeItemService">
+            <summary>
+            Change item class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.GetItems">
+            <summary>
+             Gets collection of items
+            </summary>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.IItem"/></returns>
+            <exception cref="T:System.NullReferenceException">Throws if result is null</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.IsCorrectId(System.String)">
+            <summary>
+            Checks number correctness
+            </summary>
+            <param name="id"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.ParseId(System.String)">
+            <summary>
+            Parses id to int
+            </summary>
+            <param name="id"></param>
+            <returns>int value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.ChangeName(System.Int32,System.String)">
+            <summary>
+            Changes name of item
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.GetItemValue(System.String)">
+            <summary>
+            Gets item type
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.IsItemType(System.String)">
+            <summary>
+            Check if value is items type
+            </summary>
+            <param name="input"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.ChangeDescription(System.Int32,System.String)">
+            <summary>
+            Changes item description
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.IsPriceCorrect(System.String)">
+            <summary>
+            Check price format correctness
+            </summary>
+            <param name="input"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.ChangePrice(System.Int32,System.String)">
+            <summary>
+            Changes item price
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.IsCategoryType(System.String)">
+            <summary>
+            Check if value is category type
+            </summary>
+            <param name="input"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.ChangeCategory(System.Int32,System.String)">
+            <summary>
+            Changes category of item
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.ChangeItemService.GetItemById(System.Int32)">
+            <summary>
+            Returns collection of items
+            </summary>
+            <param name="resultId"></param>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.IItem"/></returns>
+        </member>
+        <member name="T:Onion_ServiceLayer.EnterPageService">
+            <summary>
+            Enter page class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.EnterPageService.GetLoggedUser">
+            <summary>
+            Gets logged user type
+            </summary>
+            <returns>Type value</returns>
+        </member>
+        <member name="T:Onion_ServiceLayer.LoginPageService">
+            <summary>
+            Login page class with business logic
+            </summary>
+        </member>
+        <member name="F:Onion_ServiceLayer.LoginPageService.currentUser">
+            <summary>
+            Current user value
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.LoginPageService.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Onion_ServiceLayer.LoginPageService.Login">
+            <summary>
+            Contains login value
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.LoginPageService.CheckData(System.String,System.String)">
+            <summary>
+            Checks correcdt login data
+            </summary>
+            <param name="login"></param>
+            <param name="password"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.LoginPageService.ISCorrectLogin(System.String,System.String)">
+            <summary>
+            Changes current user
+            </summary>
+            <param name="login"></param>
+            <param name="password"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="T:Onion_ServiceLayer.NewOrderService">
+            <summary>
+            New order class with business logic
+            </summary>
+        </member>
+        <member name="F:Onion_ServiceLayer.NewOrderService.newOrderController">
+            <summary>
+            Controller that contains business logic for new order
+            </summary>
+        </member>
+        <member name="F:Onion_ServiceLayer.NewOrderService.bucketOrderController">
+            <summary>
+            Controller for bucket order
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.NewOrderService.GetDataForOrder">
+            <summary>
+            Gets required data from order
+            </summary>
+            <returns>Data for order</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.NewOrderService.FormOrder(Onion_DomainLayer.Order,System.Collections.Generic.List{Onion_DomainLayer.IItem})">
+            <summary>
+            Forms new order
+            </summary>
+            <param name="order"></param>
+            <param name="items">Collection of <see cref="T:Onion_DomainLayer.IItem"/></param>
+        </member>
+        <member name="M:Onion_ServiceLayer.NewOrderService.CountTotalResult(System.Collections.Generic.List{Onion_DomainLayer.IItem})">
+            <summary>
+            Gets total price for item
+            </summary>
+            <param name="items">Collection of <see cref="T:Onion_DomainLayer.IItem"/></param>
+            <returns>Final summary</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.NewOrderService.ChosenCategory(Onion_DomainLayer.Category)">
+            <summary>
+            Gets items of chosen <see cref="T:Onion_DomainLayer.Category"/>
+            </summary>
+            <param name="category"></param>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.IItem"/></returns>
+        </member>
+        <member name="T:Onion_ServiceLayer.RegistratiionPageService">
+            <summary>
+            Registration Page class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.RegistratiionPageService.RegisterRole(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Register new user
+            </summary>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Onion_ServiceLayer.SearchItemService">
+            <summary>
+            Search item class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.SearchItemService.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.SearchItemService.ChosenCategory(Onion_DomainLayer.Category)">
+            <summary>
+            Gets items by chosen category
+            </summary>
+            <param name="category"><see cref="T:Onion_DomainLayer.Category"/> value</param>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.IItem"/></returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.SearchItemService.ContainsName(System.String)">
+            <summary>
+            Check if assortement contains specific name
+            </summary>
+            <param name="result"></param>
+            <returns>bool value</returns>
+            <exception cref="T:System.NullReferenceException">Throws if result is empty</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.SearchItemService.SearchByName(System.String)">
+            <summary>
+            Search collection of items bu specific name
+            </summary>
+            <param name="name"></param>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.IItem"/></returns>
+            <exception cref="T:System.NullReferenceException">Throws if input name is empty</exception>
+        </member>
+        <member name="T:Onion_ServiceLayer.SeeOrderHistoryService">
+            <summary>
+            See order history class with business logic
+            </summary>
+        </member>
+        <member name="M:Onion_ServiceLayer.SeeOrderHistoryService.getAllOrders">
+            <summary>
+            Gets all orders
+            </summary>
+            <returns>Collection of <see cref="T:Onion_DomainLayer.Order"/></returns>
+            <exception cref="T:System.NullReferenceException">Throws if orders are empty</exception>
+        </member>
+        <member name="M:Onion_ServiceLayer.SeeOrderHistoryService.IsUserRole">
+            <summary>
+            Check if current user good for order
+            </summary>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_ServiceLayer.SeeOrderHistoryService.IsCurrentUserLogined(Onion_DomainLayer.Order)">
+            <summary>
+            Check if current user is signed in
+            </summary>
+            <param name="order"><see cref="T:Onion_DomainLayer.Order"/> value</param>
+            <returns>bool value</returns>
+            <exception cref="T:System.NullReferenceException">Throws if order is null</exception>
+        </member>
+    </members>
+</doc>

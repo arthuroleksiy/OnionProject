@@ -1,0 +1,137 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Onion_DomainLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Onion_DomainLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Onion_DomainLayer.dll": {}
+        }
+      },
+      "Onion_PersistanceLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Onion_DomainLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Onion_PersistanceLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Onion_PersistanceLayer.dll": {}
+        }
+      },
+      "Onion_ServiceLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Onion_DomainLayer": "1.0.0",
+          "Onion_PersistanceLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Onion_ServiceLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Onion_ServiceLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Onion_DomainLayer/1.0.0": {
+      "type": "project",
+      "path": "../Onion_DomainLayer/Onion_DomainLayer.csproj",
+      "msbuildProject": "../Onion_DomainLayer/Onion_DomainLayer.csproj"
+    },
+    "Onion_PersistanceLayer/1.0.0": {
+      "type": "project",
+      "path": "../Onion_PersistanceLayer/Onion_PersistanceLayer.csproj",
+      "msbuildProject": "../Onion_PersistanceLayer/Onion_PersistanceLayer.csproj"
+    },
+    "Onion_ServiceLayer/1.0.0": {
+      "type": "project",
+      "path": "../Onion_ServiceLayer/Onion_ServiceLayer.csproj",
+      "msbuildProject": "../Onion_ServiceLayer/Onion_ServiceLayer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Onion_DomainLayer >= 1.0.0",
+      "Onion_PersistanceLayer >= 1.0.0",
+      "Onion_ServiceLayer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Hp\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\Onion_PresentationLayer.csproj",
+      "projectName": "Onion_PresentationLayer",
+      "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\Onion_PresentationLayer.csproj",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj": {
+              "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj"
+            },
+            "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj": {
+              "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj"
+            },
+            "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj": {
+              "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

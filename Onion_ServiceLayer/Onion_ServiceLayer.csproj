@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Hp\source\repos\Onion_ServiceLayer\Onion_ServiceLayer.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Onion_DomainLayer\Onion_DomainLayer.csproj" />
+    <ProjectReference Include="..\Onion_PersistanceLayer\Onion_PersistanceLayer.csproj" />
+  </ItemGroup>
+
+</Project>

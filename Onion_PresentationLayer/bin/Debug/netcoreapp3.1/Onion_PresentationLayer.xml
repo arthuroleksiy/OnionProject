@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Onion_PresentationLayer</name>
+    </assembly>
+    <members>
+        <member name="T:Onion_PresentationLayer.AddItemPL">
+            <summary>
+            Adding item class
+            </summary>
+        </member>
+        <member name="T:Onion_PresentationLayer.AddItemPL.GetChoise">
+            <summary>
+            Delegate of users choise
+            </summary>
+            <param name="chose"></param>
+            <param name="parsedChoise"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Onion_PresentationLayer.AddItemPL.#ctor">
+            <summary>
+            Default constructor Initialize values
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.AddItemPL.StartAdding">
+            <summary>
+            Users choise
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.AddItemPL.NewItem">
+            <summary>
+            User entering data and creating new <see cref="T:Onion_DomainLayer.IItem"/>
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.AddItemPL.ShowAssortement">
+            <summary>
+            Show assortement
+            </summary>
+        </member>
+        <member name="T:Onion_PresentationLayer.BucketOrderPL">
+            <summary>
+            Bucket order presentation
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.BucketOrderPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.BucketOrderPL.ChangeBucketOrderStatus">
+            <summary>
+            Write order and change status
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.BucketOrderPL.Output">
+            <summary>
+            Write orders
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.BucketOrderPL.OutputResult(Onion_DomainLayer.Order)">
+            <summary>
+            Writing orders
+            </summary>
+            <param name="i"><see cref="T:Onion_DomainLayer.Order"/> value</param>
+        </member>
+        <member name="M:Onion_PresentationLayer.BucketOrderPL.ChangeStatus">
+            <summary>
+            Changing orders status
+            </summary>
+        </member>
+        <member name="T:Onion_PresentationLayer.ChangeInfoPL">
+            <summary>
+            Change info presentation
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeInfoPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeInfoPL.Output">
+            <summary>
+            Write values
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeInfoPL.ShowPersons">
+            <summary>
+            Write Users
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeInfoPL.OutputFields">
+            <summary>
+            Output fields indexes
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeInfoPL.ChangeValue">
+            <summary>
+            Chnage info
+            </summary>
+        </member>
+        <member name="T:Onion_PresentationLayer.ChangeItemPL">
+            <summary>
+            Change item presentation
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeItemPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeItemPL.ChangeItemMenu">
+            <summary>
+            Writing items
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.ChangeItemPL.ChangeValue">
+            <summary>
+            Change item menu
+            </summary>
+        </member>
+        <member name="T:Onion_PresentationLayer.EnterPagePL">
+            <summary>
+            Starting page
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Onion_PresentationLayer.EnterPagePL.#ctor" -->
+        <member name="M:Onion_PresentationLayer.EnterPagePL.Output">
+            <summary>
+            Output procedure
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.EnterPagePL.Choise">
+            <summary>
+            Make choise
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.EnterPagePL.ChangeView">
+            <summary>
+            Change view
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.NewOrderPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.NewOrderPL.BuyingItems">
+            <summary>
+            Buy item
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.NewOrderPL.Output">
+            <summary>
+            Write result
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.NewOrderPL.UserChoise(Onion_DomainLayer.Category@)">
+            <summary>
+            User choise
+            </summary>
+            <param name="enm"><see cref="T:Onion_DomainLayer.Category"/></param>
+        </member>
+        <member name="M:Onion_PresentationLayer.NewOrderPL.SearchByName">
+            <summary>
+            Search by name
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.NewOrderPL.OutputResult(Onion_DomainLayer.Category)">
+            <summary>
+            Write result
+            </summary>
+            <param name="enm"><see cref="T:Onion_DomainLayer.Category"/></param>
+        </member>
+        <member name="M:Onion_PresentationLayer.NewOrderPL.ChooseItem(Onion_DomainLayer.Category)">
+            <summary>
+            Choose Item
+            </summary>
+            <param name="enm"><see cref="T:Onion_DomainLayer.Category"/></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Onion_PresentationLayer.NewOrderPL.ShowOrderedGoods(Onion_DomainLayer.Category@)" -->
+        <member name="M:Onion_PresentationLayer.NewOrderPL.ChooseId(Onion_DomainLayer.Category@,System.Int32@)">
+            <summary>
+            Choose Id
+            </summary>
+            <param name="enm"><see cref="T:Onion_DomainLayer.Category"/></param>
+            <param name="id"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Onion_PresentationLayer.NewOrderPL.ChooseQuantity(Onion_DomainLayer.Category@)" -->
+        <member name="M:Onion_PresentationLayer.RegistrationPagePL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.RegistrationPagePL.Output">
+            <summary>
+            Process of registration
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.RegistrationPagePL.RegistrationResult(System.Boolean)">
+            <summary>
+            Registration result
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.Output">
+            <summary>
+            Write choise
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.SerfingInList">
+            <summary>
+            Serfing In List
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.UserChoise(Onion_DomainLayer.Category@)">
+            <summary>
+            User choise
+            </summary>
+            <param name="enm"><see cref="T:Onion_DomainLayer.Category"/></param>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.SearchName">
+            <summary>
+            Search Name
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.SearchNameResult">
+            <summary>
+            Search name result
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.OutputResult(Onion_DomainLayer.Category)">
+            <summary>
+            Write result
+            </summary>
+            <param name="enm"><see cref="T:Onion_DomainLayer.Category"/></param>
+        </member>
+        <member name="M:Onion_PresentationLayer.SearchItemPL.ChooseNextStep">
+            <summary>
+            Choose next step
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.SeeOrderHistoryPL.#ctor">
+            <summary>
+            Default construcyor
+            </summary>
+        </member>
+        <member name="M:Onion_PresentationLayer.SeeOrderHistoryPL.OutputUserData(Onion_DomainLayer.Order)">
+            <summary>
+            Output result order
+            </summary>
+            <param name="i"><see cref="T:Onion_DomainLayer.Order"/></param>
+        </member>
+        <member name="M:Onion_PresentationLayer.SeeOrderHistoryPL.InputOrder">
+            <summary>
+            Input order
+            </summary>
+        </member>
+    </members>
+</doc>

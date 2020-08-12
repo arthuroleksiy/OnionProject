@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Onion_DomainLayer\Onion_DomainLayer.csproj" />
+    <ProjectReference Include="..\Onion_PersistanceLayer\Onion_PersistanceLayer.csproj" />
+    <ProjectReference Include="..\Onion_PresentationLayer\Onion_PresentationLayer.csproj" />
+    <ProjectReference Include="..\Onion_ServiceLayer\Onion_ServiceLayer.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Onion_DomainLayer</name>
+    </assembly>
+    <members>
+        <member name="T:Onion_DomainLayer.Administrator">
+            <summary>
+            Administrator class
+            </summary>
+        </member>
+        <member name="M:Onion_DomainLayer.Administrator.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Onion_DomainLayer.Administrator"/> class.
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:Onion_DomainLayer.Administrator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Onion_DomainLayer.Administrator"/> class that initialize base instace of the <see cref="T:Onion_DomainLayer.RegisteredUser"/> class .
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.Guest">
+            <summary>
+            Guest class derived from <see cref="T:Onion_DomainLayer.IRole"/>
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.Category">
+            <summary>
+            Sefine <see cref="T:Onion_DomainLayer.Category"/> enum.
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Bakery">
+            <summary>
+            Bakery value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Fruits_and_Vegetables">
+            <summary>
+            Fruits_and_Vegetables value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Milk_products">
+            <summary>
+            Milk_products value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Meat_and_fish">
+            <summary>
+            Meat_and_fish value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Canned_food">
+            <summary>
+            Canned_food value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Packet_cereals">
+            <summary>
+            Packet_sereals value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Drinks">
+            <summary>
+            Drinks value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Sweets">
+            <summary>
+            Sweets value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Category.Household_Goods">
+            <summary>
+            Household_Goods value
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.IItem">
+            <summary>
+            Define <see cref="T:Onion_DomainLayer.IItem"/> interface.
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.IItem.Id">
+            <summary>
+            Id value
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.IItem.Name">
+            <summary>
+            Name value
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.IItem.Description">
+            <summary>
+            Description value
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.IItem.Price">
+            <summary>
+            Price
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.IItem.TotalPrice">
+            <summary>
+            Total price
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.IItem.Category">
+            <summary>
+            <see cref="P:Onion_DomainLayer.IItem.Category"/>
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.IRegisteredUser">
+            <summary>
+            Define <see cref="T:Onion_DomainLayer.IRegisteredUser"/> enum and inherit <see cref="T:Onion_DomainLayer.IRole"/> interface.
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.IRole">
+            <summary>
+            Interface represents role of user
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.ItemByNumber">
+            <summary>
+            Defines ItemByNumber enum and inherit <see cref="T:Onion_DomainLayer.IItem"/> interface.
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByNumber.Id">
+            <value>get the value of id</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByNumber.Number">
+            <value>get the value of Number</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByNumber.Name">
+            <value>get the value of Name</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByNumber.Description">
+            <value>get the value of Description</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByNumber.Price">
+            <value>get the value of Price</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByNumber.TotalPrice">
+            <value>get the value of TotalPrice</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByNumber.Category">
+            <value>get the value of <see cref="P:Onion_DomainLayer.ItemByNumber.Category"/></value>
+        </member>
+        <member name="M:Onion_DomainLayer.ItemByNumber.#ctor(System.Int32,System.Int32,System.String,System.String,System.Decimal,System.Decimal,Onion_DomainLayer.Category)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Onion_DomainLayer.ItemByNumber"/> class.
+            </summary>
+            <param name="id"></param>
+            <param name="Number"></param>
+            <param name="Name"></param>
+            <param name="Description"></param>
+            <param name="Price"></param>
+            <param name="TotalPrice"></param>
+            <param name="Category"><see cref="P:Onion_DomainLayer.ItemByNumber.Category"/> value</param>
+        </member>
+        <member name="T:Onion_DomainLayer.ItemByWeight">
+            <summary>
+            Define Item by weight derived from <see cref="T:Onion_DomainLayer.IItem"/>
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByWeight.Id">
+            <value>get the value of id</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByWeight.Weight">
+            <value>get the value of Weight</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByWeight.Name">
+            <value>get the value of Name</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByWeight.Description">
+            <value>get the value of Description</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByWeight.Price">
+            <value>get the value of Price</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByWeight.TotalPrice">
+            <value>get the value of TotalPrice</value>
+        </member>
+        <member name="P:Onion_DomainLayer.ItemByWeight.Category">
+            <value>get the value of <see cref="P:Onion_DomainLayer.ItemByWeight.Category"/></value>
+        </member>
+        <member name="M:Onion_DomainLayer.ItemByWeight.#ctor(System.Int32,System.Double,System.String,System.String,System.Decimal,System.Decimal,Onion_DomainLayer.Category)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Onion_DomainLayer.ItemByWeight"/> class.
+            </summary>
+            <param name="id"></param>
+            <param name="Weight"></param>
+            <param name="Name"></param>
+            <param name="Description"></param>
+            <param name="Price"></param>
+            <param name="TotalPrice"></param>
+            <param name="Category"><see cref="P:Onion_DomainLayer.ItemByWeight.Category"/> value</param>
+        </member>
+        <member name="T:Onion_DomainLayer.ItemType">
+            <summary>
+            Defines enum of choise
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.ItemType.Name">
+            <summary>
+            Name value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.ItemType.Description">
+            <summary>
+            Description value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.ItemType.Price">
+            <summary>
+            Price value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.ItemType.TotalPrice">
+            <summary>
+            Total price value
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.ItemType.Category">
+            <summary>
+            Category value
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.Status">
+            <summary>
+            Enum represents Orsers status
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Status.New">
+            <summary>
+            New order
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Status.Cancelled_by_administrator">
+            <summary>
+            Order cancelled by administrtor order
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Status.Cancelled_by_user">
+            <summary>
+            Order cancelled by user 
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Status.Payment_required">
+            <summary>
+            Payment reuired for order
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Status.Sent">
+            <summary>
+            Order has been sent
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Status.Recieved">
+            <summary>
+            Order has been recieved
+            </summary>
+        </member>
+        <member name="F:Onion_DomainLayer.Status.Finished">
+            <summary>
+            Order is finished
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.Order">
+            <summary>
+            Order class
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.Order.Id">
+            <summary>
+            Id value
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.Order.Status">
+            <summary>
+            <see cref="P:Onion_DomainLayer.Order.Status"/> value
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.Order.Items">
+            <summary>
+            Collection of <see cref="T:Onion_DomainLayer.IItem"/>
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.Order.Date">
+            <summary>
+            <see cref="T:System.DateTime"/> value
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.Order.RegisteredUserId">
+            <summary>
+            Id value
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.Order.User">
+            <summary>
+            <see cref="T:Onion_DomainLayer.RegisteredUser"/> value
+            </summary>
+        </member>
+        <member name="M:Onion_DomainLayer.Order.#ctor(System.Int32,Onion_DomainLayer.Status,System.Collections.Generic.IEnumerable{Onion_DomainLayer.IItem},System.DateTime,Onion_DomainLayer.RegisteredUser)">
+            <summary>
+            Paameters constructor
+            </summary>
+            <param name="id"></param>
+            <param name="Status"></param>
+            <param name="Items"></param>
+            <param name="Date"></param>
+            <param name="User"></param>
+        </member>
+        <member name="M:Onion_DomainLayer.Order.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:Onion_DomainLayer.OrderHistory">
+            <summary>
+            Order history class
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.OrderHistory.Orders">
+            <summary>
+            Collection of <see cref="T:Onion_DomainLayer.Order"/>
+            </summary>
+        </member>
+        <member name="M:Onion_DomainLayer.OrderHistory.#ctor(System.Collections.Generic.IEnumerable{Onion_DomainLayer.Order})">
+            <summary>
+            Parametrized constructor
+            </summary>
+            <param name="orders">Collection of <see cref="T:Onion_DomainLayer.Order"/></param>
+        </member>
+        <member name="T:Onion_DomainLayer.RegisteredUser">
+            <summary>
+            Derivered class from <see cref="T:Onion_DomainLayer.IRegisteredUser"/>
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.RegisteredUser.RegisteresUserId">
+            <summary>
+            User id.
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.RegisteredUser.Name">
+            <summary>
+            User name.
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.RegisteredUser.Surname">
+            <summary>
+            User surname.
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.RegisteredUser.TelephoneNumber">
+            <summary>
+            User telephone.
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.RegisteredUser.Login">
+            <summary>
+            User login.
+            </summary>
+        </member>
+        <member name="P:Onion_DomainLayer.RegisteredUser.Password">
+            <summary>
+            User password.
+            </summary>
+        </member>
+        <member name="M:Onion_DomainLayer.RegisteredUser.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Onion_DomainLayer.RegisteredUser"/> class.
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Onion_DomainLayer.User" -->
+        <member name="M:Onion_DomainLayer.User.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Parametrized constructor, which initialize constructor of <see cref="T:Onion_DomainLayer.RegisteredUser"/> entity
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:Onion_DomainLayer.User.#ctor">
+            <summary>
+            Default constructor, which initialize constructor of <see cref="T:Onion_DomainLayer.RegisteredUser"/> entity
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Onion_ServiceLayer/1.0.0": {
+        "dependencies": {
+          "Onion_DomainLayer": "1.0.0",
+          "Onion_PersistanceLayer": "1.0.0"
+        },
+        "runtime": {
+          "Onion_ServiceLayer.dll": {}
+        }
+      },
+      "Onion_DomainLayer/1.0.0": {
+        "runtime": {
+          "Onion_DomainLayer.dll": {}
+        }
+      },
+      "Onion_PersistanceLayer/1.0.0": {
+        "dependencies": {
+          "Onion_DomainLayer": "1.0.0"
+        },
+        "runtime": {
+          "Onion_PersistanceLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Onion_ServiceLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Onion_DomainLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Onion_PersistanceLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

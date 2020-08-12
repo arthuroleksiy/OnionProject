@@ -1,0 +1,9 @@
+C:\Users\Hp\source\repos\Onion_DomainLayer\obj\Debug\netcoreapp3.1\Onion_DomainLayer.csprojAssemblyReference.cache
+C:\Users\Hp\source\repos\Onion_DomainLayer\obj\Debug\netcoreapp3.1\Onion_DomainLayer.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\Onion_DomainLayer\obj\Debug\netcoreapp3.1\Onion_DomainLayer.AssemblyInfo.cs
+C:\Users\Hp\source\repos\Onion_DomainLayer\bin\Debug\netcoreapp3.1\Onion_DomainLayer.deps.json
+C:\Users\Hp\source\repos\Onion_DomainLayer\bin\Debug\netcoreapp3.1\Onion_DomainLayer.dll
+C:\Users\Hp\source\repos\Onion_DomainLayer\bin\Debug\netcoreapp3.1\Onion_DomainLayer.pdb
+C:\Users\Hp\source\repos\Onion_DomainLayer\obj\Debug\netcoreapp3.1\Onion_DomainLayer.dll
+C:\Users\Hp\source\repos\Onion_DomainLayer\obj\Debug\netcoreapp3.1\Onion_DomainLayer.pdb
+C:\Users\Hp\source\repos\Onion_DomainLayer\bin\Debug\netcoreapp3.1\Onion_DomainLayer.xml

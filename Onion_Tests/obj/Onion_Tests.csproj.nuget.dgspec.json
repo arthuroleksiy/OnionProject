@@ -1,0 +1,335 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Hp\\source\\repos\\Onion_Tests\\Onion_Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj",
+        "projectName": "Onion_DomainLayer",
+        "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj",
+        "projectName": "Onion_PersistanceLayer",
+        "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\Onion_PresentationLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\Onion_PresentationLayer.csproj",
+        "projectName": "Onion_PresentationLayer",
+        "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\Onion_PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj"
+              },
+              "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj"
+              },
+              "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj",
+        "projectName": "Onion_ServiceLayer",
+        "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj"
+              },
+              "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Hp\\source\\repos\\Onion_Tests\\Onion_Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Onion_Tests\\Onion_Tests.csproj",
+        "projectName": "Onion_Tests",
+        "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_Tests\\Onion_Tests.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\source\\repos\\Onion_Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_DomainLayer\\Onion_DomainLayer.csproj"
+              },
+              "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PersistanceLayer\\Onion_PersistanceLayer.csproj"
+              },
+              "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\Onion_PresentationLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_PresentationLayer\\Onion_PresentationLayer.csproj"
+              },
+              "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj": {
+                "projectPath": "C:\\Users\\Hp\\source\\repos\\Onion_ServiceLayer\\Onion_ServiceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
